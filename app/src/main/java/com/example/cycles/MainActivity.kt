@@ -11,4 +11,9 @@ fun main() {
         n++
         term = 1.0 / (n * n)
     }
+
+    println("Сумма ряда: ${"%.6f".format(sum)}")
+    println("Последнее слагаемое: ${"%.6e".format(term)}")
+    println("Количество повторений цикла: ${n - 1}")
+    println("Проверка (Сумма с последним слагаемым): ${"%.6f".format(sum + term)}")
 }
