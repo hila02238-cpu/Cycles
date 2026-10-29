@@ -7,5 +7,8 @@ fun main() {
     val epsilon = 0.000001
 
     while (abs(term) >= epsilon) {
+        sum += term
+        n++
+        term = 1.0 / (n * n)
     }
 }
